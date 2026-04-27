@@ -1,0 +1,19 @@
+Train:
+  batch_size: 128
+  learning_rate:  0.1
+  reg: 0.0005
+  epochs: 25
+  steps: [10, 18]
+  warmup: 0
+  momentum: 0.9
+  gamma: 0.1
+
+network:
+  model: ResNet-32
+
+data:
+  imbalance: imbalance # regular or imbalance
+  beta: 0.9999
+
+loss:
+  loss_type: CE
